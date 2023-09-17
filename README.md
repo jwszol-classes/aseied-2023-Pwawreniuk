@@ -12,21 +12,27 @@ sc.install_pypi_package("matplotlib")
 ```
 ## Functions
 ### Transformation Functions
-transform_geo_to_tile(lat, lon): Transforms geographical coordinates into tile coordinates.
-transform_tile_to_geo(x, y): Transforms tile coordinates into geographical coordinates.
+**transform_geo_to_tile(lat, lon)** - Transforms geographical coordinates into tile coordinates.
+
+**transform_tile_to_geo(x, y)** - Transforms tile coordinates into geographical coordinates.
 ### Tile Generation
-generate_tiles(lat1, lon1, lat2, lon2): Generates a list of URLs for tile retrieval based on specified geographical coordinates.
+**generate_tiles(lat1, lon1, lat2, lon2)** - Generates a list of URLs for tile retrieval based on specified geographical coordinates.
 ### Image Processing Functions
-display_output_map(tile_set, x_count, y_count): Displays a composite map from a set of tiles.
-calc_height_increase(pixel_data): Calculates elevation from pixel data.
-generate_elevation_thresholds(pixel_data): Generates elevation thresholds based on pixel data.
-apply_elevation_thresholds(input_array, thresholds): Applies elevation thresholds to an input array.
-apply_color_mapping(pixel_data, thresholds): Applies color mapping to pixel data.
+**display_output_map(tile_set, x_count, y_count)** - Displays a composite map from a set of tiles.
+
+**calc_height_increase(pixel_data)** - Calculates elevation from pixel data.
+
+**generate_elevation_thresholds(pixel_data)** - Generates elevation thresholds based on pixel data.
+
+**apply_elevation_thresholds(input_array, thresholds)** - Applies elevation thresholds to an input array.
+
+**apply_color_mapping(pixel_data, thresholds)** - Applies color mapping to pixel data.
 ### File Path Extraction Functions
-extract_x(filepath): Extracts the X coordinate from a file path.
-extract_y(filepath): Extracts the Y coordinate from a file path.
+**extract_x(filepath)** - Extracts the X coordinate from a file path.
+
+**extract_y(filepath)** - Extracts the Y coordinate from a file path.
 ### Main Pipeline Function
-run_image_processing_pipeline(): The main pipeline function that orchestrates the entire process. It retrieves tiles, processes them, applies thresholds, generates color mappings, and displays the output.
+**run_image_processing_pipeline()** - The main pipeline function that orchestrates the entire process. It retrieves tiles, processes them, applies thresholds, generates color mappings, and displays the output.
 ## Usage
 * To use this image processing pipeline in a Jupyter Notebook on an AWS EMR cluster, follow these steps:
 
