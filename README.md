@@ -54,6 +54,9 @@ sc.install_pypi_package("matplotlib")
 
 * The processed output will be displayed using Matplotlib in the Jupyter Notebook, and a color-mapped image will be saved as 'color_mapped_output.png' on the EMR cluster's storage.
 
+## Results
+The result of our program is a map with six zones of average elevation marked on it
+![Elevation map](https://github.com/jwszol-classes/aseied-2023-Pwawreniuk/blob/main/output_map.png)
 ## Note
 This code is designed to process elevation data tiles and demonstrate various image processing techniques in a Jupyter Notebook on an AWS EMR cluster. You can further customize and extend it according to your specific requirements.
 
